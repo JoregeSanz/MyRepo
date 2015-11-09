@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayColor"
+    android:orientation="vertical" >
+    
+    <!-- title bar -->
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/titlebarColor"
+	    android:orientation="horizontal"
+	    >
+	    
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Done"
+            android:textSize="@dimen/titleSize"
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true"
+            />
+        
+        <TextView
+            android:text="Advanced Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/titleFontColor"
+            android:textSize="@dimen/titleSize"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerInParent="true"
+            />
+        
+	</RelativeLayout>
+	
+    <!-- seperate line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayFontColor"
+        >
+    </LinearLayout>
+
+    <!-- space line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp" 
+        >
+    </LinearLayout>
+   
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            >
+            
+            <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+            
+		    <!-- Right-Handed Mode -->
+		    <RelativeLayout
+		        android:id="@+id/setting_righthand"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/grayColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Right-Handed Mode"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/titleSize"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <ToggleButton
+			        android:id="@+id/toggle_righthand"
+			        android:layout_width="wrap_content"
+			        android:layout_height="@dimen/toggle_height"
+			        android:layout_marginRight="15dp"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:text=""
+			        android:textOn=""
+			        android:textOff=""
+			        android:background="@drawable/toggle"
+		        />
+		        
+		    </RelativeLayout>
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:background="@color/grayColor"
+		        android:text="Improves the game layout for right-handed players. Disable it for a classic, more familiar solitaire appearance."
+		        android:textColor="@color/grayFontColor" 
+		        />
+		    
+		     <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+            
+		    <!-- Auto Complete -->
+		    <RelativeLayout
+		        android:id="@+id/setting_autocomplete"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/grayColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Auto Complete"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/titleSize"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <ToggleButton
+			        android:id="@+id/toggle_autocomplete"
+			        android:layout_width="wrap_content"
+			        android:layout_height="@dimen/toggle_height"
+			        android:layout_marginRight="15dp"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:text=""
+			        android:textOn=""
+			        android:textOff=""
+			        android:background="@drawable/toggle"
+		        />
+		        
+		    </RelativeLayout>
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		     <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:background="@color/grayColor"
+		        android:text="Auto Complete finishes the game when all cards are turned over and aligned for a win."
+		        android:textColor="@color/grayFontColor" 
+		        />
+		     
+		      <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+            
+		    <!-- Game Solver -->
+		    <RelativeLayout
+		        android:id="@+id/setting_gamesolver"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+			    android:visibility="gone"
+		        >
+		        
+		        <TextView
+		            android:text="Game Solver"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/titleSize"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <ToggleButton
+			        android:id="@+id/toggle_gamesolver"
+			        android:layout_width="wrap_content"
+			        android:layout_height="@dimen/toggle_height"
+			        android:layout_marginRight="15dp"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:text=""
+			        android:textOn=""
+			        android:textOff=""
+			        android:background="@drawable/toggle"
+		        />
+		        
+		    </RelativeLayout>
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        android:visibility="gone"
+		        >
+		    </LinearLayout>
+		    
+		     <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:background="@color/grayColor"
+		        android:text="Game Solver calculates all possible moves as you play. When enabled, it informs you when the game is no longer winnable."
+		        android:textColor="@color/grayFontColor"
+		        android:visibility="gone" 
+		        />
+		     
+		      <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+            
+		    <!-- End of Game Summary -->
+		    <RelativeLayout
+		        android:id="@+id/setting_summary"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/grayColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="End of Game Summary"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/titleSize"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <ToggleButton
+			        android:id="@+id/toggle_summary"
+			        android:layout_width="wrap_content"
+			        android:layout_height="@dimen/toggle_height"
+			        android:layout_marginRight="15dp"
+			        android:layout_centerVertical="true"
+			        android:layout_alignParentRight="true"
+			        android:text=""
+			        android:textOn=""
+			        android:textOff=""
+			        android:background="@drawable/toggle"
+		        />
+		        
+		    </RelativeLayout>
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		     <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		        android:layout_marginBottom="10dp"
+		        android:background="@color/grayColor"
+		        android:text="Shows statistics upon game completion, and allows the player to record the game score."
+		        android:textColor="@color/grayFontColor" 
+		        />
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

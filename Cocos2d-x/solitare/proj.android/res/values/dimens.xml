@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dlgTitleSize">18sp</dimen>
+    
+    <!-- Settings view -->
+    <dimen name="titleSize">18sp</dimen>
+    <dimen name="toggle_height">30dp</dimen>
+    <dimen name="dlg_margin">20dp</dimen>
+    <dimen name="gameover_dlg_margin">30dp</dimen>
+    
+    <dimen name="headerFontSize">14sp</dimen>
+    <dimen name="headerPaddingLeft">20dp</dimen>
+    <dimen name="rowPaddingLeft">50dp</dimen>
+    
+    <dimen name="seplineheight">2px</dimen>
+    
+    <!-- custom wallpaper -->
+    <dimen name="dialog_title_size">20.0sp</dimen>
+    <dimen name="dialog_content_size">16.0sp</dimen>
+    <color name="friend_option_menu_list_divide_color">#545454</color>
+    
+    <!-- How to play -->
+    <dimen name="howtoplay_font_size">12sp</dimen>
+    
+    <!-- High Scores Tab bar -->
+    <dimen name="segment_stroke">1dp</dimen>
+    <dimen name="segment_round">3dp</dimen>
+    <dimen name="f16">16sp</dimen>
+    <dimen name="f14">14sp</dimen>
+    <dimen name="f12">12sp</dimen>
+    <dimen name="f10">10sp</dimen>
+</resources>

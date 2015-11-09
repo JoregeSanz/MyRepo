@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- new game dialog -->
+    <color name="dlgBgColor">#ffffff</color>
+    <color name="blackColor">#000</color>
+    <color name="dlgBtnColor">#27a1f6</color>
+    
+    <!-- setting view -->
+    <color name="titlebarColor">#2a2929</color>
+    <color name="titleFontColor">#FFFFFF</color>
+    <color name="headerFontColor">#1b84bb</color>
+    <color name="rowFontColor">#888</color> <!-- darkgray -->
+    
+    <color name="whiteColor">#fff</color>
+    <color name="grayColor">#efefef</color>
+    <color name="grayFontColor">#aaa</color>
+    <color name="blueGray">#5986a5</color>
+    
+    <!-- custom wallpaper -->
+    <color name="dlg_back_color">#212121</color>
+    <color name="confirm_dlg_header_line_color">#74b6e8</color>
+    <dimen name="confirm_dlg_header_line_height">2dip</dimen>
+    <color name="option_item_bgcolor_selected">#323232</color>
+    <color name="option_item_bgcolor">#212121</color>
+    
+    <!--  light  -->
+    <!-- progress dialog -->
+    <color name="trans_bg">#D8000000</color>
+    
+    <!-- How to play -->
+    <color name="plus_points_color">#4b718c</color>
+    <color name="minus_points_color">#6f403b</color>
+    <color name="dark_blue">#2475fc</color>
+    
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RealSolitaire</string>
+    
+    <!-- new game dialog -->
+    <string name="dlgTitle">What would you like to do\n with your current game?</string>
+    <string name="btnNewGame">Quit and Start New Game</string>
+    <string name="btnRestart">Restart This Game</string>
+    <string name="btnKeep">Keep Playing</string>
+    
+    <!-- setting view -->
+    <string name="Settings">Settings</string>
+    <string name="Done">Done</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    
+    <string name="DRAW">DRAW</string>
+    <string name="draw_one">Draw One</string>
+    <string name="draw_three">Draw Three</string>
+    
+    <string name="SCORING">SCORING</string>
+    <string name="none">None</string>
+    <string name="standard">Standard</string>
+    <string name="vegas">Vegas</string>
+    <string name="cumulative">Cumulative</string>
+    
+    <string name="timed_game">Timed Game</string>
+    <string name="show_moves">Show Moves</string>
+    <string name="game_sounds">Game Sounds</string>
+    
+    <string name="wallpaper">Wallpaper</string>
+    <string name="cards">Cards</string>
+    
+    <!-- card style view -->
+    <string name="face_style">Face Style</string>
+    <string name="classic">Classic</string>
+    <string name="back_style">Back Style</string>
+    <string name="standard_blue">Standard Blue</string>
+    <string name="classic_blue">Classic Blue</string>
+    
+    <!-- custom wallpaper -->
+    <string name="add_wallpaper">Add wallpaper</string>
+    <string name="album">Album</string>
+    <string name="camera">Camera</string>
+    <string name="loading_image">Loading image...</string>
+    
+    <!-- advanced settings -->
+    <string name="advanced_settings">Advanced Settings</string>
+    
+    <!-- How to play -->
+    <string name="how_to_play">How to Play</string>
+    <string name="rules">RULES</string>
+    <string name="rule_content">
+        Klondike solitaire is played with a single standard card deck (without the Jockers).Cards are shuffled and dealt into seven columns. The first column is dealt one card. The second is dealt two cards. The process continues to the seventh pile, which is dealt seven cards. Finally, the top card in each column is turned over. These seven columns are called the tableau.\n\n
+		The remaining deck, placed in the left or right corner of the screen, is called the stock. Cards are drawn one at a time (easy gameplay) or three at a time (hard gameplay). Once drawn, cards are flipped over and placed in the waste pile. When you can no longer draw cards from the stock pile, tap its outline to replenish it with cards.\n\n
+		The four empty spaces above the tableau are called foundations. The object of the game is to play all the cards on the foundations, by suit and in order from Ace to King.\n\n
+		Until you have uncovered all the cards needed to build the foundations, you will need to move cards between the tableau (seven columns). You cannot move cards between just any tableau pile, however. Cards in the tableau must be arranged in descending order from King to Ace, and alternate between red and black.		        
+    </string>
+    <string name="vegas_mode">VEGAS MODE</string>
+    <string name="vegas_mode_content">
+        In Vegas-style Klondike, you invest $52, or $1 per card, to play the game. For each card played on a foundation, you win back $5. Only eleven cards ($55) need to be played on the foundations to start making a profit.\n\n
+        In Draw One mode, all of the cards are available, but you may only pass through the deck once. When playing Draw Three mode (more challenging), you may only pass through the deck three times.
+    </string>
+    
+    <string name="strategy">STRATEGY</string>
+    <string name="strategy_content">
+        Klondike solitaire is difficult because thre are so many hidden cards, both beneath the cards in the tableau, and between the cards you can access from the stock. Always prioritize a move that uncovers cards over a move that does not.\n\n
+        Do not play cards on the Aces until you are sure you will not need them in the tableau. Always play twos on Aces immediately, because you will not need them to play any other cards. But wait to play both red threes, for example, until you have played both black Aces to the foundations. That way, you will have a place to put the black twos when you uncover them, and the red threes will no longer be needed.\n\n
+        Do not let any one tableau pile get too far ahead of the others if you can help it. Having one particularly large pile makes it difficult to make other moves.
+    </string>
+    
+    <string name="winning_bonus">
+        Winning Bonus ✪: Timed games award bonus points after 30 seconds of gameplay. The bonus is calculated with the following formula: 700,000 / (seconds to finish).
+    </string>
+    <string name="standard_score_description">
+        1 Draw One mode only.\n3 Draw Three mode only.\n✪ Timed game only.
+    </string>
+    
+    <!-- About -->
+    <string name="about_solitaire">About Real Solitaire Free</string>
+    <string name="feedback_subject">Real Solitaire feedback</string>
+    <string name="tell_subject">Check out Real Solitaire Free on the Google Store!</string>
+    <string name="tell_text">I thought you might be interested in this cool new Solitaire game for Android</string>
+    
+    <!-- game over summary -->
+    <string name="game_over_des">
+        Enter your name below to save your score. If you are logged into Game Center, your score will be submitted automatically.
+    </string>
+    <string name="you_won">You Won!</string>
+    <string name="gamecenter_logined">Logged In, Score Submitted</string>
+    <string name="gamecenter_notlogin">Not Logged In</string>
+    
+</resources>

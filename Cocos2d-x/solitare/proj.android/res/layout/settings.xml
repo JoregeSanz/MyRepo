@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayColor"
+    android:orientation="vertical" >
+<!-- dialog style :: android:layout_margin="@dimen/dlg_margin" -->
+    <!-- title bar -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlebarColor"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Done"
+            android:textSize="@dimen/titleSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/Settings"
+            android:textColor="@color/titleFontColor"
+            android:textSize="@dimen/titleSize" />
+    </RelativeLayout>
+
+    <!-- seperate line -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayFontColor" >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- header -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/headerPaddingLeft"
+                android:paddingTop="20dp"
+                android:text="@string/DRAW"
+                android:textColor="@color/headerFontColor"
+                android:textSize="@dimen/headerFontSize" />
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seplineheight"
+                android:background="@color/grayFontColor" >
+            </LinearLayout>
+
+            <!-- cell -->
+
+            <RelativeLayout
+                android:id="@+id/setting_draw_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/draw_one"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ImageView
+                    android:id="@+id/img_draw_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/check_on" />
+            </RelativeLayout>
+
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_draw_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/draw_three"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ImageView
+                    android:id="@+id/img_draw_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/check_on" />
+            </RelativeLayout>
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grayFontColor"
+                android:visibility="gone"
+                 >
+            </LinearLayout>
+
+            <!-- scoring -->
+            <!-- header -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/headerPaddingLeft"
+                android:paddingTop="20dp"
+                android:text="@string/SCORING"
+                android:textColor="@color/headerFontColor"
+                android:textSize="@dimen/headerFontSize" />
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seplineheight"
+                android:background="@color/grayFontColor" >
+            </LinearLayout>
+
+            <!-- cell -->
+
+            <RelativeLayout
+                android:id="@+id/setting_none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/none"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ImageView
+                    android:id="@+id/img_none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/check_on" />
+            </RelativeLayout>
+
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_standard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/standard"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ImageView
+                    android:id="@+id/img_standard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/check_on" />
+            </RelativeLayout>
+
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_vegas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/vegas"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ImageView
+                    android:id="@+id/img_vegas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/check_on" />
+            </RelativeLayout>
+
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_cumulative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grayColor"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/cumulative"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_cumulative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/toggle_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/toggle"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:id="@+id/sepline_cumulative"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grayFontColor"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                 >
+            </LinearLayout>
+
+            <!-- score bar -->
+            <!-- header -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:textColor="@color/grayFontColor"
+                android:textSize="@dimen/titleSize" />
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seplineheight"
+                android:background="@color/grayFontColor" >
+            </LinearLayout>
+
+            <!-- cell -->
+
+            <RelativeLayout
+                android:id="@+id/setting_timed_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grayColor"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/timed_game"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_timed_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/toggle_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/toggle"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_show_moves"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grayColor"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/show_moves"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_show_moves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/toggle_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/toggle"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_game_sounds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grayColor"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/game_sounds"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_game_sounds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/toggle_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/toggle"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seplineheight"
+                android:background="@color/grayFontColor"
+                 >
+            </LinearLayout>
+
+            <!-- wallpaper bar -->
+            <!-- header -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:textColor="@color/grayFontColor"
+                android:textSize="@dimen/titleSize" />
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seplineheight"
+                android:background="@color/grayFontColor" >
+            </LinearLayout>
+
+            <!-- cell -->
+
+            <RelativeLayout
+                android:id="@+id/setting_wallpaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/wallpaper"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ImageView
+                    android:id="@+id/img_wall_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/list_arrow" />
+
+                <TextView
+                    android:id="@+id/txt_wallpaper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/img_wall_arrow"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="50dp"
+                    android:text="Wood"
+                    android:textColor="@color/blueGray"
+                    android:textSize="@dimen/titleSize" />
+            </RelativeLayout>
+
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/cards"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ImageView
+                    android:id="@+id/img_card_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/list_arrow" />
+
+                <TextView
+                    android:id="@+id/txt_cardStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/img_card_style"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="50dp"
+                    android:text="Standard"
+                    android:textColor="@color/blueGray"
+                    android:textSize="@dimen/titleSize" />
+            </RelativeLayout>
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seplineheight"
+                android:background="@color/grayFontColor"
+                 >
+            </LinearLayout>
+
+            <!-- additional features -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:textColor="@color/grayFontColor"
+                android:textSize="@dimen/titleSize" />
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seplineheight"
+                android:background="@color/grayFontColor" >
+            </LinearLayout>
+
+            <!-- cell -->
+
+            <RelativeLayout
+                android:id="@+id/setting_advanced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/rowPaddingLeft"
+                    android:text="@string/advanced_settings"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ImageView
+                    android:id="@+id/img_advanced_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/list_arrow" />
+            </RelativeLayout>
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seplineheight"
+                android:background="@color/grayFontColor"
+                 >
+            </LinearLayout>
+
+            <!-- how to play bar -->
+            <!-- header -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:textColor="@color/grayFontColor"
+                android:textSize="@dimen/titleSize" />
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grayFontColor" >
+            </LinearLayout>
+
+            <!-- How to Play -->
+
+            <RelativeLayout
+                android:id="@+id/setting_howtoplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/howto_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/how_to_play" >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/howto_icon"
+                    android:layout_marginLeft="45dp"
+                    android:padding="10dp"
+                    android:text="@string/how_to_play"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ImageView
+                    android:id="@+id/img_howtoplay_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/list_arrow" />
+            </RelativeLayout>
+
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+
+            <!-- About Real Solitaire Free -->
+
+            <RelativeLayout
+                android:id="@+id/setting_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/row"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/about_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/about" >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/about_icon"
+                    android:layout_marginLeft="45dp"
+                    android:padding="10dp"
+                    android:text="@string/about_solitaire"
+                    android:textColor="@color/rowFontColor"
+                    android:textSize="@dimen/titleSize" />
+
+                <ImageView
+                    android:id="@+id/img_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/list_arrow" />
+            </RelativeLayout>
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grayFontColor" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

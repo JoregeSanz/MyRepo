@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/dlgBgColor" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/dlgTitle"
+        android:textSize="@dimen/dlgTitleSize"
+        android:textColor="@color/blackColor"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/btn_newgame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_gravity="center"
+        android:text="@string/btnNewGame"
+        android:textSize="@dimen/dlgTitleSize"
+        android:textColor="@color/dlgBtnColor" />
+    
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_gravity="center"
+        android:text="@string/btnRestart"
+        android:textSize="@dimen/dlgTitleSize"
+        android:textColor="@color/dlgBtnColor" />
+    
+    <Button
+        android:id="@+id/btn_keep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_gravity="center"
+        android:text="@string/btnKeep"
+        android:textSize="@dimen/dlgTitleSize"
+        android:textStyle="bold"
+        android:textColor="@color/dlgBtnColor" />
+    
+</LinearLayout>

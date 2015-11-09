@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/grayColor"
+    android:orientation="vertical" >
+    
+    <!-- title bar -->
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/titlebarColor"
+	    android:orientation="horizontal"
+	    >
+	    
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OK"
+            android:textSize="@dimen/titleSize"
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true"
+            />
+        
+        <TextView
+            android:id="@+id/txt_title"
+            android:text="Game Completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/titleFontColor"
+            android:textSize="@dimen/titleSize"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerInParent="true"
+            />
+        
+	</RelativeLayout>
+	
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            >
+           
+            <ImageView
+                android:id="@+id/img_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vegas_lost_header" 
+                android:scaleType="fitXY"
+                />
+            
+            <!-- header -->
+
+            <TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/grayFontColor"
+			    android:text="@string/game_over_des"
+			    android:padding="10dp"
+			    android:gravity="center" 
+			    />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/headerPaddingLeft"
+                android:paddingTop="20dp"
+                android:text="PLAYER"
+                android:textColor="@color/headerFontColor"
+                android:textSize="@dimen/headerFontSize" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grayFontColor" >
+            </LinearLayout>
+
+            <!-- cell -->
+
+            <RelativeLayout
+                android:id="@+id/setting_visitsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:text="Name"
+                    android:textColor="@color/blackColor"
+                    android:textSize="@dimen/titleSize" />
+                
+                <EditText
+	                android:id="@+id/edit_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="130dp"
+                    android:textSize="@dimen/titleSize"
+	                android:ems="10"
+	                android:inputType="textPersonName" >
+	            </EditText>
+                
+            </RelativeLayout>
+
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:visibility="gone" 
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_draw_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:orientation="horizontal" 
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:text="Game Center"
+                    android:textColor="@color/blackColor"
+                    android:textSize="@dimen/titleSize" />
+                
+                <ImageView
+                    android:id="@+id/img_gamecenter"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/yellow_exclamation"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="130dp"
+                    />
+                
+                <TextView
+                    android:id="@+id/txt_gamecenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="160dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/gamecenter_notlogin"
+                    android:textColor="@color/blackColor"
+                    android:textSize="@dimen/titleSize" />
+
+            </RelativeLayout>
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grayFontColor" >
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/headerPaddingLeft"
+                android:paddingTop="20dp"
+                android:text="GAME SUMMARY"
+                android:textColor="@color/headerFontColor"
+                android:textSize="@dimen/headerFontSize" />
+
+            <!-- seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grayFontColor" >
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:id="@+id/setting_tell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:text="Mode"
+                    android:textColor="@color/blackColor"
+                    android:textSize="@dimen/titleSize" />
+                
+                <TextView
+                    android:id="@+id/txt_mode"
+		            android:text="Vegas, Draw One"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/plus_points_color"
+		            android:textSize="@dimen/titleSize"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+                
+            </RelativeLayout>
+            
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:text="Score"
+                    android:textColor="@color/blackColor"
+                    android:textSize="@dimen/titleSize" />
+                
+                <TextView
+                    android:id="@+id/txt_score"
+		            android:text="-$47"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/minus_points_color"
+		            android:textSize="@dimen/titleSize"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+                
+            </RelativeLayout>
+            
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:id="@+id/line_time"
+                android:layout_width="match_parent"
+                android:layout_height="1px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:id="@+id/row_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:text="Time"
+                    android:textColor="@color/blackColor"
+                    android:textSize="@dimen/titleSize" />
+                
+                <TextView
+                    android:id="@+id/txt_time"
+		            android:text="15"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/plus_points_color"
+		            android:textSize="@dimen/titleSize"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+                
+            </RelativeLayout>
+            
+            <!-- inner seperate line -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/grayFontColor" />
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:text="Moves"
+                    android:textColor="@color/blackColor"
+                    android:textSize="@dimen/titleSize" />
+                
+                <TextView
+                    android:id="@+id/txt_moves"
+		            android:text="2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/plus_points_color"
+		            android:textSize="@dimen/titleSize"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+                
+            </RelativeLayout>
+            
+            <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		     <!-- bottom space -->
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="20dp"
+		        android:paddingLeft="20dp"
+		        android:text=""
+		        />
+            
+        </LinearLayout>
+        
+    </ScrollView>
+    
+</LinearLayout>

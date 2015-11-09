@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayColor"
+    android:orientation="vertical" >
+    
+    <!-- title bar -->
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/titlebarColor"
+	    android:orientation="horizontal"
+	    >
+	    
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Done"
+            android:textSize="@dimen/titleSize"
+            android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true"
+            />
+        
+        <TextView
+            android:text="How to Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/titleFontColor"
+            android:textSize="@dimen/titleSize"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerInParent="true"
+            />
+        
+	</RelativeLayout>
+	
+    <!-- seperate line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayFontColor"
+        >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            >
+        	
+            <!-- space line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="35dp" 
+		        >
+		    </LinearLayout>
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <ImageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/game_help"
+		        android:background="@color/whiteColor" 
+		        />
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <!-- header -->
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="20dp"
+		        android:paddingLeft="@dimen/headerPaddingLeft"
+		        android:paddingBottom="5dp"
+		        android:text="@string/rules"
+		        android:textSize="@dimen/headerFontSize"
+		        android:textColor="@color/headerFontColor"
+		        />
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		        android:text="@string/rule_content" 
+		        android:textColor="@color/blackColor"
+		        android:background="@color/whiteColor"
+		        />
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <!-- vegas mode  header -->
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="20dp"
+		        android:paddingLeft="@dimen/headerPaddingLeft"
+		        android:paddingBottom="5dp"
+		        android:text="@string/vegas_mode"
+		        android:textSize="@dimen/headerFontSize"
+		        android:textColor="@color/headerFontColor"
+		        />
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		        android:text="@string/vegas_mode_content" 
+		        android:textColor="@color/blackColor"
+		        android:background="@color/whiteColor"
+		        />
+		    
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <!-- strategy  header -->
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="20dp"
+		        android:paddingLeft="@dimen/headerPaddingLeft"
+		        android:paddingBottom="5dp"
+		        android:text="@string/strategy"
+		        android:textSize="@dimen/headerFontSize"
+		        android:textColor="@color/headerFontColor"
+		        />
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:padding="10dp"
+		        android:text="@string/strategy_content" 
+		        android:textColor="@color/blackColor"
+		        android:background="@color/whiteColor"
+		        />
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <!-- standard scoring -->
+		     <!-- header -->
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="20dp"
+		        android:paddingLeft="@dimen/headerPaddingLeft"
+		        android:paddingBottom="5dp"
+		        android:text="STANDARD SCORING"
+		        android:textSize="@dimen/headerFontSize"
+		        android:textColor="@color/headerFontColor"
+		        />
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <!-- cell -->
+
+		    <RelativeLayout
+		        android:id="@+id/setting_draw_one"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Card Moved to Foundation"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="+10 points"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/plus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		    <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Card Moved from Waste to Tableau"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="+5 points"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/plus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		    <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Card Moved from Foundation To Tableau"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="-15 points"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/minus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		     <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Card Turned Over"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="+5 points"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/plus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		     <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Each Pass Through Deck After One Pass 1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="-100 points"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/minus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		     <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Each Pass Through Deck After Four Passes 3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="-20 points"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/minus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		     <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Ten Secounds Gameplay"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="-2 points"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/minus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		     <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Undo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="-30 points"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/minus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		     <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Hint Revealed"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="-30 points"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/minus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		     <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="@string/winning_bonus"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		     <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="The highest possible Standard score, with bonus points, is 24,113."
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="5dp"
+		        android:paddingLeft="20dp"
+		        android:text="@string/standard_score_description"
+		        android:textSize="@dimen/howtoplay_font_size"
+		        android:textColor="@color/grayFontColor"
+		        />
+		    
+		    <!-- vegas scroing -->
+		    <!-- header -->
+		    
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="20dp"
+		        android:paddingLeft="@dimen/headerPaddingLeft"
+		        android:paddingBottom="5dp"
+		        android:text="VEGAS SCORING"
+		        android:textSize="@dimen/headerFontSize"
+		        android:textColor="@color/headerFontColor"
+		        />
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		    <!-- cell -->
+
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Card Moved to Foundation"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="+$5"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/plus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		    <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Card Moved from Foundation to Tableau"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="-$5"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/minus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		    <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Undo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="-$5"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/minus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		     <!-- inner seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        >
+		        
+		        <ImageView
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_marginLeft="10dp"
+			        android:background="@color/grayFontColor"
+			        />
+		    	
+		    </LinearLayout>
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/whiteColor"
+			    android:orientation="horizontal"
+		        >
+		        
+		        <TextView
+		            android:text="Hint Revealed"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/blackColor"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentLeft="true"
+		            />
+		        
+		        <TextView
+		            android:text="-$5"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textColor="@color/minus_points_color"
+		            android:textSize="@dimen/howtoplay_font_size"
+		            android:padding="10dp"
+		            android:layout_alignParentRight="true"
+		            />
+		        
+		    </RelativeLayout>
+		    
+		    <!-- seperate line -->
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="1px"
+		        android:background="@color/grayFontColor"
+		        >
+		    </LinearLayout>
+		    
+		     <!-- bottom space -->
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="20dp"
+		        android:paddingLeft="20dp"
+		        android:text=""
+		        />
+        </LinearLayout>
+    	    
+    </ScrollView>
+    
+</LinearLayout>
